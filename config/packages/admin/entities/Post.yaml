@@ -1,0 +1,25 @@
+easy_admin:
+
+  entities:
+    Post:
+      class: App\Entity\Post
+      form:
+        fields:
+          - {type: 'group', icon: 'pencil', label: 'Contenu', css_class: 'col-lg-7'}
+          - name
+          - slug
+          - content
+          - {type: 'group', icon: 'th-list', label: 'Plus', css_class: 'col-lg-5'}
+          - category
+          - tags
+          - debut
+          - fin
+          - stage
+          - {type: 'group', icon: 'clip', label: 'Images', css_class: 'col-lg-5'}
+          - {property: 'thumbnailFile', type: 'vich_image' }
+        list:
+          title: "Mes situations"
+          fields: ['title', 'content', 'createdAt', {property: 'thumbnail', type: 'image', base_path: '%uploads_path%'}]
+          actions:
+            - {name: 'edit', icon: 'pencil', label: false, css_class: 'btn btn-secondary'}
+            - {name: 'delete', icon: 'trash', label: false, css_class: 'btn btn-danger'}

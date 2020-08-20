@@ -1,0 +1,17 @@
+easy_admin:
+
+  design:
+    menu:
+      - label: 'Portfolio'
+        icon: 'newspaper-o'
+        children:
+          - {entity: 'Post', icon: 'newspaper-o', label: 'Situations'}
+          - {entity: 'Category', icon: 'inbox', label: 'Catégories'}
+          - {entity: 'Tag', icon: 'tags', label: 'Tags'}
+      - label: 'CV'
+        icon: 'newspaper-o'
+        children:
+          - {entity: 'CV', icon: 'newspaper-o', label: 'Texte'}
+          - {entity: 'Situation', icon: 'newspaper-o', label: 'Experience'}
+
+

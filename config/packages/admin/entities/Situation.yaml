@@ -1,0 +1,14 @@
+easy_admin:
+
+  entities:
+    Situation:
+      class: App\Entity\Situation
+      form:
+        fields:
+          - nom
+          - texte
+          - debut
+          - fin
+        actions:
+          - {name: 'edit', icon: 'pencil', label: false, css_class: 'btn btn-secondary'}
+          - {name: 'delete', icon: 'trash', label: false, css_class: 'btn btn-danger'}
