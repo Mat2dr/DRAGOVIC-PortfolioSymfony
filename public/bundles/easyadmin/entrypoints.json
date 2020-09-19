@@ -34,21 +34,6 @@
       "js": [
         "./form-type-text-editor.js"
       ]
-    },
-    "form-type-collection": {
-      "js": [
-        "./form-type-collection.js"
-      ]
-    },
-    "form-type-slug": {
-      "js": [
-        "./form-type-slug.js"
-      ]
-    },
-    "form-type-textarea": {
-      "js": [
-        "./form-type-textarea.js"
-      ]
     }
   }
 }
